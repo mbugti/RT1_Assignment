@@ -7,7 +7,7 @@
 3. Follows the external walls.
 4. Reaches and stop at the last and required last position.
 
-https://github.com/mbugti/RT1_Assignment/blob/main/Simulation.jpg
+![Simulation](https://github.com/mbugti/RT1_Assignment/blob/main/Simulation.jpg)
 
 ## Computational Graph
 
