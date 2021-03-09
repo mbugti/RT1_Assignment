@@ -10,8 +10,7 @@
 ![Simulation](https://github.com/mbugti/RT1_Assignment/blob/main/Simulation.jpg)
 
 ## Computational Graph
-
-
+![graph](https://github.com/mbugti/RT1_Assignment/blob/main/rqtgraph.png)
 
 ## Contents of the Package
 - **random_node.cpp:** Generating random coordinates out of the 6 coordinates, [(-4,-3);(-4,2);(-4,7);(5,-7);(5,-3);(5,1)]
