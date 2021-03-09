@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+ 
+
+
+    <node pkg="final_assignment" type="user_interface" name="user_interface" output="screen" />
+    <node pkg="final_assignment" type="random_server" name="random_server"/>
+    <node pkg="final_assignment" type="wall_follow_service_m.py" name="wall_follower" />
+
+	
+
+</launch>

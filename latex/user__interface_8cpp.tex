@@ -1,0 +1,82 @@
+\hypertarget{user__interface_8cpp}{}\section{src/user\+\_\+interface.cpp File Reference}
+\label{user__interface_8cpp}\index{src/user\+\_\+interface.\+cpp@{src/user\+\_\+interface.\+cpp}}
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}nav\+\_\+msgs/\+Odometry.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}geometry\+\_\+msgs/\+Twist.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}move\+\_\+base\+\_\+msgs/\+Move\+Base\+Action\+Goal.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}final\+\_\+assignment/target.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}std\+\_\+srvs/\+Set\+Bool.\+h\char`\"{}}\\*
+Include dependency graph for user\+\_\+interface.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{user__interface_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{user__interface_8cpp_aab6e381bffc34921244a29ec0538ba64}{position\+Callback} (const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&msg)
+\item 
+int \hyperlink{user__interface_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Publisher \hyperlink{user__interface_8cpp_a350594df3e8f6948c8462edfd41ce086}{pub}
+\item 
+ros\+::\+Subscriber \hyperlink{user__interface_8cpp_a24d694a9a8bf73ee31fe92724886a276}{sub}
+\item 
+move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action\+Goal \hyperlink{user__interface_8cpp_aba8f9ea527086a6bfc77aa9c7f7b695c}{goal\+\_\+pos}
+\item 
+float \hyperlink{user__interface_8cpp_a51cfe1654cabb04270c9b4bd39a4cd42}{x\+\_\+position}
+\item 
+float \hyperlink{user__interface_8cpp_a58da4bb03c149b531121f1ab9c7b4e00}{y\+\_\+position}
+\item 
+final\+\_\+assignment\+::target \hyperlink{user__interface_8cpp_acbca3d0b93cf0ebb255d3191b9c547b0}{random\+\_\+position}
+\item 
+std\+\_\+srvs\+::\+Set\+Bool \hyperlink{user__interface_8cpp_ae6354788bd23d77103a49beea06f6ed4}{wall\+\_\+follower}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!main@{main}}
+\index{main@{main}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{user__interface_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{user__interface_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!position\+Callback@{position\+Callback}}
+\index{position\+Callback@{position\+Callback}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{position\+Callback(const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&msg)}{positionCallback(const nav_msgs::Odometry::ConstPtr &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void position\+Callback (
+\begin{DoxyParamCaption}
+\item[{const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{user__interface_8cpp_aab6e381bffc34921244a29ec0538ba64}{}\label{user__interface_8cpp_aab6e381bffc34921244a29ec0538ba64}
+
+
+\subsection{Variable Documentation}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!goal\+\_\+pos@{goal\+\_\+pos}}
+\index{goal\+\_\+pos@{goal\+\_\+pos}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{goal\+\_\+pos}{goal_pos}}]{\setlength{\rightskip}{0pt plus 5cm}move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action\+Goal goal\+\_\+pos}\hypertarget{user__interface_8cpp_aba8f9ea527086a6bfc77aa9c7f7b695c}{}\label{user__interface_8cpp_aba8f9ea527086a6bfc77aa9c7f7b695c}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!pub@{pub}}
+\index{pub@{pub}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{pub}{pub}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Publisher pub}\hypertarget{user__interface_8cpp_a350594df3e8f6948c8462edfd41ce086}{}\label{user__interface_8cpp_a350594df3e8f6948c8462edfd41ce086}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!random\+\_\+position@{random\+\_\+position}}
+\index{random\+\_\+position@{random\+\_\+position}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{random\+\_\+position}{random_position}}]{\setlength{\rightskip}{0pt plus 5cm}final\+\_\+assignment\+::target random\+\_\+position}\hypertarget{user__interface_8cpp_acbca3d0b93cf0ebb255d3191b9c547b0}{}\label{user__interface_8cpp_acbca3d0b93cf0ebb255d3191b9c547b0}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!sub@{sub}}
+\index{sub@{sub}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{sub}{sub}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Subscriber sub}\hypertarget{user__interface_8cpp_a24d694a9a8bf73ee31fe92724886a276}{}\label{user__interface_8cpp_a24d694a9a8bf73ee31fe92724886a276}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!wall\+\_\+follower@{wall\+\_\+follower}}
+\index{wall\+\_\+follower@{wall\+\_\+follower}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{wall\+\_\+follower}{wall_follower}}]{\setlength{\rightskip}{0pt plus 5cm}std\+\_\+srvs\+::\+Set\+Bool wall\+\_\+follower}\hypertarget{user__interface_8cpp_ae6354788bd23d77103a49beea06f6ed4}{}\label{user__interface_8cpp_ae6354788bd23d77103a49beea06f6ed4}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!x\+\_\+position@{x\+\_\+position}}
+\index{x\+\_\+position@{x\+\_\+position}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{x\+\_\+position}{x_position}}]{\setlength{\rightskip}{0pt plus 5cm}float x\+\_\+position}\hypertarget{user__interface_8cpp_a51cfe1654cabb04270c9b4bd39a4cd42}{}\label{user__interface_8cpp_a51cfe1654cabb04270c9b4bd39a4cd42}
+\index{user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}!y\+\_\+position@{y\+\_\+position}}
+\index{y\+\_\+position@{y\+\_\+position}!user\+\_\+interface.\+cpp@{user\+\_\+interface.\+cpp}}
+\subsubsection[{\texorpdfstring{y\+\_\+position}{y_position}}]{\setlength{\rightskip}{0pt plus 5cm}float y\+\_\+position}\hypertarget{user__interface_8cpp_a58da4bb03c149b531121f1ab9c7b4e00}{}\label{user__interface_8cpp_a58da4bb03c149b531121f1ab9c7b4e00}
